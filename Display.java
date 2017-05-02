@@ -1,3 +1,5 @@
+package asciicrawler;
+
 import java.awt.*;
 import java.awt.event.*;
 
@@ -14,10 +16,12 @@ public class Display extends Frame {
      *
      * @param a adapter which get the window events
      */
-  public Display (WindowAdapter a) {
+  public Display (WindowAdapter a, KeyListener b) {
     setTitle("Ascii-Crawler");
-    setSize(400,100);
+    setSize(200,300);
     addWindowListener(a);
+    addKeyListener(b);
+    setFocusTraversalKeysEnabled(false);
 
     setVisible(true);
   }

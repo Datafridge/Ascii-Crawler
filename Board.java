@@ -1,6 +1,7 @@
+package asciicrawler;
+
 import java.awt.*;
 import java.awt.event.*;
-
 /**
  * Board stores all configurations of the current room
  *

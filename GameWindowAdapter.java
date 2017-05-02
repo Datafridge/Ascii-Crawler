@@ -1,3 +1,5 @@
+package asciicrawler;
+
 import java.awt.*;
 import java.awt.event.*;
 
@@ -7,7 +9,7 @@ import java.awt.event.*;
  * @author Leon Hansen, Felix Schmidt
  * @version 1.0
  */
-class GameListener extends WindowAdapter
+class GameWindowAdapter extends WindowAdapter
 {
   public void windowClosing(WindowEvent e)
   {

@@ -1,4 +1,5 @@
 import java.awt.*;
+import asciicrawler.Game;
 
 /**
  * Creates the game
