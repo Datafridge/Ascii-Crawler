@@ -1,10 +1,9 @@
 package asciicrawler;
 
-import java.awt.*;
-import java.awt.event.*;
+import java.awt.event.KeyEvent;
+import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
-import java.util.ArrayList;
 
 /**
  * Main class of the game, Creates all components
@@ -23,7 +22,8 @@ public class Game {
     board = new Board();
     keylist = new ArrayList<KeyEvent>();
 
-    Display display = new Display(gamewindowadapter, gamekeylistener);
+    @SuppressWarnings("unused")
+	Display display = new Display(gamewindowadapter, gamekeylistener);
 
     Timer timer = new Timer();
     GameTicker gameticker = new GameTicker();

@@ -1,4 +1,3 @@
-import java.awt.*;
 import asciicrawler.Game;
 
 /**
@@ -10,6 +9,8 @@ import asciicrawler.Game;
 public class Main {
   public static void main(String[] args) {
     System.out.println("Game started");
-    Game game = new Game();
+    
+    @SuppressWarnings("unused")
+	Game game = new Game();
   }
 }

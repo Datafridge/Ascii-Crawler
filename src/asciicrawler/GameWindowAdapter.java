@@ -1,10 +1,10 @@
 package asciicrawler;
 
-import java.awt.*;
-import java.awt.event.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 /**
- * handles the close request and disposes the window and quit the application
+ * handles the close request, disposes the window and quits the application
  *
  * @author Leon Hansen, Felix Schmidt
  * @version 1.0

@@ -1,7 +1,5 @@
 package asciicrawler;
 
-import java.awt.*;
-import java.awt.event.*;
 /**
  * Board stores all configurations of the current room
  *
@@ -11,11 +9,7 @@ import java.awt.event.*;
 public class Board {
   public static int width = 30;
   public static int height = 20;
-     /**
-     * Constructor
-     *
-     * @param a adapter which get the window events
-     */
+
   public Board () {
 
   }
