@@ -5,18 +5,21 @@ import java.awt.event.KeyListener;
 
 /**
  * save all key events to list
- *
+ * 
  * @author Leon Hansen, Felix Schmidt
  * @version 1.0
  */
-class GameKeyListener implements KeyListener
-{
-  public void keyTyped(KeyEvent e){}
+class GameKeyListener implements KeyListener {
 
-  public void keyPressed(KeyEvent e){
-    Game.keylist.add(e);
-    //System.out.println(e);
-  }
+	long lastEventTime;
 
-  public void keyReleased(KeyEvent e){}
+	public void keyTyped(KeyEvent e) {
+	}
+
+	public void keyPressed(KeyEvent e) {
+		Game.keys.setKey(e.getKeyCode());
+	}
+
+	public void keyReleased(KeyEvent e) {
+	}
 }

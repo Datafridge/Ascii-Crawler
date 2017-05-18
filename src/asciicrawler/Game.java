@@ -1,33 +1,45 @@
 package asciicrawler;
 
-import java.awt.event.KeyEvent;
-import java.util.ArrayList;
+import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
 
 /**
  * Main class of the game, Creates all components
- *
+ * 
  * @author Leon Hansen, Felix Schmidt
  * @version 1.0
  */
 public class Game {
-  public static Board board;
-  public static ArrayList<KeyEvent> keylist;
+	public static Board board;
+	public static KeyManager keys;
+	public static Display display;
+	public static Random aiRandom;
 
-  public Game () {
-    GameWindowAdapter gamewindowadapter = new GameWindowAdapter();
-    GameKeyListener   gamekeylistener   = new GameKeyListener();
+	public Game() {
+		GameWindowAdapter gameWindowAdapter = new GameWindowAdapter();
+		GameKeyListener gameKeyListener = new GameKeyListener();
 
-    board = new Board();
-    keylist = new ArrayList<KeyEvent>();
+		board = new Board();
+		keys = new KeyManager();
+		aiRandom = new Random();
 
-    @SuppressWarnings("unused")
-	Display display = new Display(gamewindowadapter, gamekeylistener);
+		display = new Display(gameWindowAdapter, gameKeyListener);
 
-    Timer timer = new Timer();
-    GameTicker gameticker = new GameTicker();
-    timer.schedule((TimerTask)gameticker,1000l,50l);
-  }
+		board.generateDungeon();
+		display.renderBoard();
+
+		Timer timer = new Timer();
+		GameTicker gameticker = new GameTicker();
+		timer.schedule((TimerTask) gameticker, 1000l, 50l);
+	}
+
+	public static void won() {
+		System.out.println("You won!");
+	}
+
+	public static void lost() {
+		System.out.println("You lost!");
+	}
 
 }
