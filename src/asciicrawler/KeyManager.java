@@ -5,6 +5,7 @@ import java.awt.event.KeyEvent;
 public class KeyManager {
 
 	private Direction moveRequest = Direction.STAY;
+	private boolean isAttacking = false;
 
 	synchronized public void setKey(int key) {
 		if (key == KeyEvent.VK_W || key == KeyEvent.VK_UP) {
@@ -19,6 +20,9 @@ public class KeyManager {
 		if (key == KeyEvent.VK_D || key == KeyEvent.VK_RIGHT) {
 			moveRequest = Direction.RIGHT;
 		}
+		if (key == KeyEvent.VK_CONTROL || key == KeyEvent.VK_SPACE) {
+			isAttacking = true;
+		} 
 	}
 
 	synchronized public Direction getMoveRequest() {
@@ -29,5 +33,11 @@ public class KeyManager {
 		Direction move = moveRequest;
 		moveRequest = Direction.STAY;
 		return move;
+	}
+	
+	synchronized public boolean consumeAttack() {
+		boolean wasAttacking = isAttacking;
+		isAttacking = false;
+		return wasAttacking;
 	}
 }

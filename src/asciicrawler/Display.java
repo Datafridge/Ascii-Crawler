@@ -29,7 +29,8 @@ public class Display extends Frame {
 	 *            presses
 	 */
 	public Display(WindowAdapter a, KeyListener b) {
-		setTitle("Ascii-Crawler");
+		updateTitle();
+		
 		addWindowListener(a);
 		addKeyListener(b);
 		setFocusTraversalKeysEnabled(false);
@@ -49,6 +50,10 @@ public class Display extends Frame {
 		setLayout(boardLayout);
 		pack();
 		setVisible(true);
+	}
+	
+	public void updateTitle() {
+		setTitle(String.format("Ascii-Crawler in Dugeon %d with %d Points",Game.level,Game.score));
 	}
 
 	public void renderBoard() {

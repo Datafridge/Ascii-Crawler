@@ -39,6 +39,14 @@ public class Board {
 			enemies[i] = new Enemy();
 		}
 	}
+	
+	public void reset() {
+		player.hasItem = false;
+		for (int i = 0; i < numberOfEnemies; i++) {
+			enemies[i].isDead = false;
+		}
+		generateDungeon();
+	}
 
 	public void setBoardObject(int x, int y, BoardObject Item) {
 		boardObjects[x][y] = Item;
@@ -97,7 +105,7 @@ public class Board {
 
 	private void spawnMobAtEmptyCell(Mob m) {
 		int x, y;
-		{
+		do {
 			x = random.nextInt(width / 2) * 2;
 			y = random.nextInt(height / 2) * 2;
 			if (m instanceof Player) { // entrance on side of the Board
@@ -107,9 +115,7 @@ public class Board {
 					y = 0;
 				}
 			}
-		}
-		while (getBoardObject(x, y) != Board.air)
-			;
+		} while (getBoardObject(x, y) != Board.air);
 		m.spawnAt(x, y);
 	}
 
@@ -121,7 +127,7 @@ public class Board {
 				} else {
 					setBoardObject(i, j, Board.water);
 				}
-				
+
 			}
 		}
 

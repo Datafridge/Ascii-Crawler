@@ -15,6 +15,7 @@ public class Gold extends BoardObject {
 	public void OnEnter() {
 		Board.player.hasItem = true;
 		Board.player.standingOn = Board.air;
+		Game.addScore(Game.GoldScore);
 	}
 
 }
