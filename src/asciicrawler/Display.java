@@ -8,8 +8,8 @@ import java.awt.event.KeyListener;
 import java.awt.event.WindowAdapter;
 
 /**
- * Class is the display of the game and handles the rendering
- * 
+ * \brief Class is the display of the game and handles the rendering
+ *
  * @author Leon Hansen, Felix Schmidt
  * @version 1.0
  */
@@ -23,20 +23,23 @@ public class Display extends Frame {
 
 	/**
 	 * Constructor of the Display class set the frame title and size
-	 * 
+	 *
 	 * @param a
 	 *            adapter which get the window events and one to listen to key
 	 *            presses
+	 *
+	 * @param b
+	 *						listener to recognize if any key was pressed
 	 */
 	public Display(WindowAdapter a, KeyListener b) {
 		updateTitle();
-		
+
 		addWindowListener(a);
 		addKeyListener(b);
 		setFocusTraversalKeysEnabled(false);
-		
+
 		Dimension size = new Dimension(40,40);
-		
+
 		GridLayout boardLayout = new GridLayout(Board.height, Board.width);
 		boardFrames = new Panel[Board.width][Board.height];
 		for (int i = 0; i < Board.height; i++) {
@@ -51,11 +54,13 @@ public class Display extends Frame {
 		pack();
 		setVisible(true);
 	}
-	
+
+	/** provides information about the level and score on the updatetitle */
 	public void updateTitle() {
 		setTitle(String.format("Ascii-Crawler in Dugeon %d with %d Points",Game.level,Game.score));
 	}
 
+	/** renders the actual state of the board */
 	public void renderBoard() {
 		for (int i = 0; i < Board.width; i++) {
 			for (int j = 0; j < Board.height; j++) {

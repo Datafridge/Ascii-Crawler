@@ -2,18 +2,27 @@ package asciicrawler;
 
 import java.awt.Color;
 
+/**
+ * \brief Player is class derived from mob. It specifices the abilities and
+ * and actions of a player.
+ *
+ * @author Leon Hansen, Felix Schmidt
+ * @version 1.0
+ */
 public class Player extends Mob {
 
+	/** returns the color of the player*/
 	public Color getColor() {
 		return Color.black;
 	}
-	
-	//Enemies can enter the player
+
+	/** set that the enemies can enter a player*/
 	@Override
 	public boolean canEnter() {
 		return true;
 	}
 
+	/** defines the movements of the player on a specific key event*/
 	@Override
 	public void move() {
 		Direction requestedMove = Game.keys.consumeMoveRequest();

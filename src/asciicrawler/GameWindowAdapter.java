@@ -11,6 +11,7 @@ import java.awt.event.WindowEvent;
  */
 class GameWindowAdapter extends WindowAdapter
 {
+  /** Defines the behavior if the window is closing. */
   public void windowClosing(WindowEvent e)
   {
     e.getWindow().dispose();
