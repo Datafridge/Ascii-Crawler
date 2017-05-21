@@ -3,7 +3,7 @@ package asciicrawler;
 import java.awt.Color;
 
 /**
- * \brief Wall is a board object. This field can not entered by any mob.
+ * \brief Water is a board object. This field can not entered by any mob.
  *
  * @author Leon Hansen, Felix Schmidt
  * @version 1.0
