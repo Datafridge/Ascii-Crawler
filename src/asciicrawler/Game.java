@@ -9,9 +9,9 @@ import java.util.TimerTask;
 import javax.swing.JOptionPane;
 
 /**
- * Main class of the game, Creates all components Stores components as static
+ * \brief Main class of the game, Creates all components Stores components as static
  * variables for easy access
- * 
+ *
  * @author Leon Hansen, Felix Schmidt
  * @version 1.0
  */
