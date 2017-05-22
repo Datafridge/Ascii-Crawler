@@ -3,25 +3,45 @@ package asciicrawler;
 import java.awt.Color;
 import java.util.LinkedList;
 
+/**
+ * \brief Contains the Enemy AI
+ *
+ * @author Leon Hansen, Felix Schmidt
+ * @version 1.0
+ */
 public class Enemy extends Mob {
-
+	//Constants
+	
+	/** When Player is in direct sight, this is the number of minimal ticks to the next move */
 	public static final int ChargeDelayMin = 6;
+	/** Difference in ticks of charging moves. Maximum delay is Min + Random - 1 */
 	public static final int ChargeDelayRandom = 3;
+	/** When wandering around, this is the number of minimal ticks to the next move */
 	public static final int WalkDelayMin = 12;
+	/** Difference in ticks of walking moves. Maximum delay is Min + Random - 1 */
 	public static final int WalkDelayRandom = 6;
+	/** Number of ticks it take an enemy to resurrect */
 	public static final int DeathTime = 500;
+	/** Number of ticks the enemy does not move after resurrection */
 	public static final int WakingTime = 50;
 
+	
+	//Runtime settings of the enemy
+	
+	/** Number of ticks until the next move */
 	public int moveTimer = 50;
+	/** Directions the enemy is looking at. It can only walk back when there is no alternative */
 	public Direction facing = Direction.UP;
-
+	/** Whether the Enemy is alive and can move */
 	public boolean isDead = false;
 
+	/** Set the resurrection timer and marks the Enemy as dead */
 	public void kill() {
 		isDead = true;
 		moveTimer = DeathTime;
 	}
 
+	/** Returns the Color based on isDead */
 	public Color getColor() {
 		return isDead ? Color.green : Color.red;
 	}
@@ -30,6 +50,7 @@ public class Enemy extends Mob {
 		return n > 0 ? 1 : n < 0 ? -1 : 0;
 	}
 
+	/** Returns true when the enemy has no obstacles to the player in a given direction */
 	public boolean canSeePlayer(Direction d) {
 		int ix = Board.getXOffset(d);
 		int iy = Board.getYOffset(d);
@@ -55,6 +76,7 @@ public class Enemy extends Mob {
 		return false;
 	}
 
+	/** Called every game tick to move the enemy when necessary */
 	@Override
 	public void move() {
 		if (moveTimer > 0) {

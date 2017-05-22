@@ -5,12 +5,16 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * Board stores all configurations of the current room
+ * \brief Board stores all configurations of the current dungeon
+ * 
+ * Contains a two dimensional array of BoardObjects
+ * Offers helper functions for handling the Board, Positions and Directions
  * 
  * @author Leon Hansen, Felix Schmidt
  * @version 1.0
  */
 public class Board {
+	/**  */
 	public static final int width = 30;
 	public static final int height = 20;
 	public static final int numberOfEnemies = 5;
