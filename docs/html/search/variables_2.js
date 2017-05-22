@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['left',['LEFT',['../enumasciicrawler_1_1Direction.html#a5bf2dba07f51db27f05c357baf2e1ff1',1,'asciicrawler::Direction']]]
+  ['facing',['facing',['../classasciicrawler_1_1Enemy.html#ab2fc6a3c9949c3d4317549f84a061ab9',1,'asciicrawler::Enemy']]]
 ];

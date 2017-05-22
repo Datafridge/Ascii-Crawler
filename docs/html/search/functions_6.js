@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['setkey',['setKey',['../classasciicrawler_1_1KeyManager.html#a891959638b2c091d79b2401587198511',1,'asciicrawler::KeyManager']]],
-  ['spawnat',['spawnAt',['../classasciicrawler_1_1Mob.html#a9029cbfef7c48ed085d387d8d6b0729d',1,'asciicrawler::Mob']]]
+  ['renderboard',['renderBoard',['../classasciicrawler_1_1Display.html#ac78b41f2afc6b0732ab4cd54d7142604',1,'asciicrawler::Display']]],
+  ['run',['run',['../classasciicrawler_1_1GameTicker.html#ace7f637461d8fde2033d01a2fc769275',1,'asciicrawler::GameTicker']]]
 ];

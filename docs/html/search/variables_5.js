@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['up',['UP',['../enumasciicrawler_1_1Direction.html#a6ddc24b03c5e790038cb48cf48ed8bb0',1,'asciicrawler::Direction']]]
+  ['left',['LEFT',['../enumasciicrawler_1_1Direction.html#a5bf2dba07f51db27f05c357baf2e1ff1',1,'asciicrawler::Direction']]]
 ];
