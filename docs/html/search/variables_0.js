@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['chargedelaymin',['ChargeDelayMin',['../classasciicrawler_1_1Enemy.html#a68c41f5b3ff03ce66a0a7748c6dcae31',1,'asciicrawler::Enemy']]],
-  ['chargedelayrandom',['ChargeDelayRandom',['../classasciicrawler_1_1Enemy.html#a5d4281f4774665c377922b28bc53a142',1,'asciicrawler::Enemy']]]
+  ['air',['air',['../classasciicrawler_1_1Board.html#affa435afb88723f5d8d1a25440c893a3',1,'asciicrawler::Board']]],
+  ['airandom',['aiRandom',['../classasciicrawler_1_1Game.html#aa82e45424ef5c303711e2f154de64e90',1,'asciicrawler::Game']]],
+  ['attackscore',['AttackScore',['../classasciicrawler_1_1Game.html#a3207bf872db55d678cbb3889694d381d',1,'asciicrawler::Game']]]
 ];

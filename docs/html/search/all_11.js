@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['wakingtime',['WakingTime',['../classasciicrawler_1_1Enemy.html#a03cbf40a5f16e3023b00ece3bfe67554',1,'asciicrawler::Enemy']]],
-  ['walkdelaymin',['WalkDelayMin',['../classasciicrawler_1_1Enemy.html#a90ed20929053611dcb72a406b51d38c7',1,'asciicrawler::Enemy']]],
-  ['walkdelayrandom',['WalkDelayRandom',['../classasciicrawler_1_1Enemy.html#ab726ddd8887f94387edf105358a034a3',1,'asciicrawler::Enemy']]],
-  ['wall',['Wall',['../classasciicrawler_1_1Wall.html',1,'asciicrawler']]],
-  ['water',['Water',['../classasciicrawler_1_1Water.html',1,'asciicrawler']]]
+  ['up',['UP',['../enumasciicrawler_1_1Direction.html#a6ddc24b03c5e790038cb48cf48ed8bb0',1,'asciicrawler::Direction']]],
+  ['updatetitle',['updateTitle',['../classasciicrawler_1_1Display.html#afbfb9296a48fa04d148715918230d3b2',1,'asciicrawler::Display']]]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['wakingtime',['WakingTime',['../classasciicrawler_1_1Enemy.html#a03cbf40a5f16e3023b00ece3bfe67554',1,'asciicrawler::Enemy']]],
-  ['walkdelaymin',['WalkDelayMin',['../classasciicrawler_1_1Enemy.html#a90ed20929053611dcb72a406b51d38c7',1,'asciicrawler::Enemy']]],
-  ['walkdelayrandom',['WalkDelayRandom',['../classasciicrawler_1_1Enemy.html#ab726ddd8887f94387edf105358a034a3',1,'asciicrawler::Enemy']]]
+  ['left',['LEFT',['../enumasciicrawler_1_1Direction.html#a5bf2dba07f51db27f05c357baf2e1ff1',1,'asciicrawler::Direction']]],
+  ['level',['level',['../classasciicrawler_1_1Game.html#a490824e2d8ea8fb6ba08159367f73a68',1,'asciicrawler::Game']]],
+  ['levelwin',['LevelWin',['../classasciicrawler_1_1Game.html#a39baf9450132d5991ff1f32e01134b17',1,'asciicrawler::Game']]]
 ];

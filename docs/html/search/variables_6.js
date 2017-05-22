@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['movetimer',['moveTimer',['../classasciicrawler_1_1Enemy.html#a4521663e829959a7c25327925b8a8f40',1,'asciicrawler::Enemy']]]
+  ['gold',['gold',['../classasciicrawler_1_1Board.html#af821e453812eaf8572780a71dacd23ce',1,'asciicrawler::Board']]],
+  ['goldscore',['GoldScore',['../classasciicrawler_1_1Game.html#ace48576550dbbab59420923b516da04f',1,'asciicrawler::Game']]]
 ];

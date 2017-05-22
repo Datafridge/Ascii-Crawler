@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['setkey',['setKey',['../classasciicrawler_1_1KeyManager.html#a891959638b2c091d79b2401587198511',1,'asciicrawler::KeyManager']]],
-  ['spawnat',['spawnAt',['../classasciicrawler_1_1Mob.html#a9029cbfef7c48ed085d387d8d6b0729d',1,'asciicrawler::Mob']]],
-  ['standingon',['standingOn',['../classasciicrawler_1_1Mob.html#a5682718b4d9809cfcc1010629f1ee0c7',1,'asciicrawler::Mob']]],
-  ['stay',['STAY',['../enumasciicrawler_1_1Direction.html#a78902531c0af93fb05af7223491a4a1f',1,'asciicrawler::Direction']]]
+  ['renderboard',['renderBoard',['../classasciicrawler_1_1Display.html#ac78b41f2afc6b0732ab4cd54d7142604',1,'asciicrawler::Display']]],
+  ['reset',['reset',['../classasciicrawler_1_1Board.html#aa6d40676bda8efa863277524168d575d',1,'asciicrawler::Board']]],
+  ['right',['RIGHT',['../enumasciicrawler_1_1Direction.html#a2d6a7c41a905e8eda907cd59e9c80a55',1,'asciicrawler::Direction']]],
+  ['run',['run',['../classasciicrawler_1_1GameTicker.html#ace7f637461d8fde2033d01a2fc769275',1,'asciicrawler::GameTicker']]]
 ];
