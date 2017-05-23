@@ -46,6 +46,7 @@ public class Display extends Frame {
 			for (int j = 0; j < Board.width; j++) {
 				Panel currentFrame = new Panel(boardLayout);
 				currentFrame.setPreferredSize(size);
+				currentFrame.setFocusable(false);
 				add(currentFrame);
 				boardFrames[j][i] = currentFrame;
 			}
